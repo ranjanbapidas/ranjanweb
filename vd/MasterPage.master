@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Vstream</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="siteBox" >
+
+  <div id="header">
+    <h1 class="title">VStream</h1>
+  </div>
+
+  <div id="menu">
+        <a href="Default.aspx" >Home</a>
+        <a href="AdvanceSearch.aspx">Advanced Search</a>
+        <a href="Upload.aspx">Upload</a>
+        <asp:LinkButton ID="lbtn1" runat="server" CausesValidation="False">lbtn1</asp:LinkButton>
+        <a href="Profile.aspx">Profile</a>
+  </div>
+
+  <div id="content" style="background-color: #E5E5E5">
+
+    
+
+    <div id="text">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <p id="footer" align="center" style="background-color: #E5E5E5">
+       
+          Copyright
+       
+© : Ranjan, Saheb, Suman. 2016  
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+    </form>
+</body>
+</html>
